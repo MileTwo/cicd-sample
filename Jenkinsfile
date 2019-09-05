@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label "jenkins-nodejs"
+    label "myjenkins-jenkins-slave"
   }
   environment {
     ORG = 'mile-two'
