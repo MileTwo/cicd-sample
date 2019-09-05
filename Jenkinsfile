@@ -8,14 +8,14 @@ pipeline {
   }
   stages {
 
-    // stage("Dependency Check") {
-    //   steps {
-    //     dependencyCheck () 
-    //     //dependencyCheckPublisher pattern: ''
-    //     //archiveArtifacts allowEmptyArchive: true, artifacts: '**/dependency-check-report.*', onlyIfSuccessful: true
+    stage("Dependency Check") {
+      steps {
+        dependencyCheck () 
+        //dependencyCheckPublisher pattern: ''
+        //archiveArtifacts allowEmptyArchive: true, artifacts: '**/dependency-check-report.*', onlyIfSuccessful: true
 
-    //   }
-    // }
+      }
+    }
 
 
     stage('Build Release') {
